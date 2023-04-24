@@ -117,23 +117,85 @@
         </div>
     </div>
 
+   <style>
+     .card{
+        min-height: 300px;
+        min-width: 200px;
+        /*margin-right: 5px*/
+        max-height:600px;
+        max-width:400px;  
+        margin-bottom: 15px;  
+    }
+
+    #messageimg{
+        width: 500px; 
+        height: 300px; 
+        overflow: hidden;  
+
+        background-image: url(./images/zam2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+    }
+
+    #message{
+        margin-right: 20%;
+    }
+
+    @media only screen and (max-width: 768px) {
+        .card{
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    }
+   </style>
+   
+
     <div class="container pt-5">
-        <div class="row">
-            <div class="col-sm-4"><img src="./images/maintenance.jpg" alt="Performing a blade changeo on the zamboni" class="img-fluid rounded"></div>
-            <div class="col-sm-8">
-                <h1 style="text-align: center;">Keep Track of Maintenance</h1>
+
+        
+
+        <div class="row d-flex justify-content-evenly">
+            <div class="col-md-4"> 
+                <div class="card">
+                    <img class="card-img-top" src="./images/maintenance.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Keep Track of Maintenance</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4"> 
+                <div class="card">
+                    <img class="card-img-top" src="./images/driving.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Keep Track of Ice Cuts</h4>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4"> 
+                <div class="card">
+                    <img class="card-img-top" src="./images/brokedown.jpg" alt="Card image">
+                    <div class="card-body">
+                        <h4 class="card-title">Keep track of equipment</h4>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="row pt-5">
-            <div class="col-sm-8">
-                <h1 style="text-align: center;">Keep Track of Ice Cuts</h1>
-            </div>
-            <div class="col-sm-4"><img src="./images/driving.jpg" alt="Performing a blade changeo on the zamboni" class="img-fluid rounded"></div>
-        </div>
+        
     </div>
 
-    <div class="fluid-container bg-dark mt-5">
-        TEST
+    <div class="bg-dark mt-5">
+        <div class="mt-4 p-5 text-white rounded">
+            <div class="row pt-5">
+                <div class="col-sm-8">
+                    <h1 style="text-align: center;">Keep Track of Ice Cuts</h1>
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quae qui libero voluptates itaque tempore corrupti delectus necessitatibus velit cum nostrum. Maiores dolor dolorem optio minus, cupiditate quas consectetur vitae. Tenetur?</p>
+                </div>
+                <div class="col-sm-4">
+                    <div class="img-fluid rounded" id="messageimg"></div>
+                </div>
+            </div>
+        </div>
     </div>
 
 </body>
